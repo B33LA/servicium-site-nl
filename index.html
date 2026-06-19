@@ -10,9 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="page-transition">
+<body>
 
-  <!-- NAVBAR -->
   <nav class="navbar">
     <a href="index.html" class="nav-logo">
       <div class="logo-icon">S</div>
@@ -39,10 +38,9 @@
 
   <!-- HERO -->
   <section class="hero">
-    <canvas id="particles-canvas" class="hero-canvas"></canvas>
     <div class="hero-content">
-      <div class="hero-badge"><span></span> Amsterdam's Trusted Financial Partner</div>
-      <h1>Financial Clarity,<br/>Built for You</h1>
+      <div class="hero-badge">Amsterdam, Netherlands</div>
+      <h1>Financial Clarity,<br/><span style="color:var(--gold);">Built for You</span></h1>
       <p>Expert bookkeeping, tax preparation, expat tax support, and financial planning — tailored to your goals with complete transparency.</p>
       <div class="hero-btns">
         <a href="https://servicium.as.me" target="_blank" class="btn-primary">Book Free Consultation</a>
@@ -50,39 +48,29 @@
       </div>
       <div class="hero-stats">
         <div class="stat">
-          <div class="stat-num"><span data-count="200" data-suffix="+">0+</span></div>
+          <div class="stat-num">200+</div>
           <div class="stat-label">Happy Clients</div>
         </div>
         <div class="stat">
-          <div class="stat-num"><span data-count="10" data-suffix="+">0+</span></div>
+          <div class="stat-num">10+</div>
           <div class="stat-label">Years Experience</div>
         </div>
         <div class="stat">
-          <div class="stat-num"><span data-count="98" data-suffix="%">0%</span></div>
+          <div class="stat-num">98%</div>
           <div class="stat-label">Client Satisfaction</div>
         </div>
-        <div class="stat">
-          <div class="stat-num"><span data-count="4" data-suffix=" Services">0</span></div>
-          <div class="stat-label">Core Services</div>
-        </div>
       </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>SCROLL</span>
-      <div class="arrow"></div>
     </div>
   </section>
 
   <!-- SERVICES PREVIEW -->
-  <section style="background: var(--navy-mid); padding: 6rem 2rem;">
+  <section style="background: var(--grey-bg);">
     <div class="container">
-      <div class="reveal">
-        <div class="section-label">What We Do</div>
-        <h2 class="section-title">Services Built Around <span>Your Success</span></h2>
-        <p class="section-subtitle">From day-to-day bookkeeping to complex expat tax matters — we've got you covered.</p>
-      </div>
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">From day-to-day bookkeeping to complex expat tax matters — we have you covered.</p>
       <div class="services-grid">
-        <div class="service-card reveal reveal-delay-1">
+        <div class="service-card">
           <div class="service-icon">📒</div>
           <h3>Bookkeeping</h3>
           <p>Accurate, up-to-date records so you always know your financial position.</p>
@@ -92,7 +80,7 @@
             <li>Financial statements</li>
           </ul>
         </div>
-        <div class="service-card reveal reveal-delay-2">
+        <div class="service-card">
           <div class="service-icon">🧾</div>
           <h3>Tax Preparation</h3>
           <p>Business and personal tax returns handled with expertise and care.</p>
@@ -102,7 +90,7 @@
             <li>Tax law expertise</li>
           </ul>
         </div>
-        <div class="service-card reveal reveal-delay-3">
+        <div class="service-card">
           <div class="service-icon">🌍</div>
           <h3>Expat Tax Support</h3>
           <p>Specialised assistance navigating Dutch taxes as an expat.</p>
@@ -112,7 +100,7 @@
             <li>Income tax returns</li>
           </ul>
         </div>
-        <div class="service-card reveal reveal-delay-4">
+        <div class="service-card">
           <div class="service-icon">📈</div>
           <h3>Financial Planning</h3>
           <p>Strategic modeling aligned with your business goals.</p>
@@ -123,8 +111,8 @@
           </ul>
         </div>
       </div>
-      <div style="text-align:center; margin-top: 2.5rem;" class="reveal">
-        <a href="services.html" class="btn-secondary">See All Services →</a>
+      <div style="margin-top: 2rem;">
+        <a href="services.html" class="btn-outline">See All Services →</a>
       </div>
     </div>
   </section>
@@ -134,137 +122,107 @@
   <!-- WHY US -->
   <section>
     <div class="container">
-      <div class="reveal" style="text-align:center; margin-bottom: 3rem;">
-        <div class="section-label">Why Servicium</div>
-        <h2 class="section-title">What Sets Us <span>Apart</span></h2>
-      </div>
+      <div class="section-label">Why Servicium</div>
+      <h2 class="section-title">What Sets Us Apart</h2>
+      <p class="section-subtitle">We build lasting relationships through personalised service and complete transparency.</p>
       <div class="why-grid">
-        <div class="why-item reveal reveal-delay-1">
-          <div class="why-num">01</div>
-          <h3>Personalised Service</h3>
+        <div class="why-item">
+          <div class="why-num">Personalised</div>
+          <h3>Client-First Approach</h3>
           <p>No cookie-cutter solutions. Every client gets a dedicated approach tailored to their situation.</p>
         </div>
-        <div class="why-item reveal reveal-delay-2">
-          <div class="why-num">02</div>
-          <h3>Full Transparency</h3>
-          <p>We explain complex financial concepts in plain language — no jargon, no hidden fees.</p>
+        <div class="why-item">
+          <div class="why-num">Transparent</div>
+          <h3>No Hidden Fees</h3>
+          <p>We explain complex financial concepts in plain language — no jargon, no surprises.</p>
         </div>
-        <div class="why-item reveal reveal-delay-3">
-          <div class="why-num">03</div>
-          <h3>Long-term Relationships</h3>
+        <div class="why-item">
+          <div class="why-num">Long-term</div>
+          <h3>Lasting Relationships</h3>
           <p>We focus on building lasting partnerships, not one-off transactions. Your success is our success.</p>
         </div>
-        <div class="why-item reveal reveal-delay-4">
-          <div class="why-num">04</div>
-          <h3>Expat Specialists</h3>
+        <div class="why-item">
+          <div class="why-num">Specialised</div>
+          <h3>Expat Experts</h3>
           <p>Deep expertise in Dutch tax law and expat-specific matters like the 30% ruling and M-form.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <div class="divider"></div>
+
   <!-- TESTIMONIALS -->
-  <section style="background: var(--navy-mid); padding: 6rem 2rem;">
+  <section style="background: var(--grey-bg);">
     <div class="container">
-      <div class="reveal" style="text-align:center; margin-bottom: 3rem;">
-        <div class="section-label">Client Stories</div>
-        <h2 class="section-title">What Our Clients <span>Say</span></h2>
-      </div>
-      <div class="testimonials-wrap reveal">
-        <div class="testimonials-track">
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">"Servicium completely transformed how I handle my finances. Their team is incredibly responsive and always goes the extra mile."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">MK</div>
-              <div><div class="author-name">Mark K.</div><div class="author-role">Small Business Owner, Amsterdam</div></div>
-            </div>
+      <div class="section-label">Client Stories</div>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Servicium completely transformed how I handle my finances. Their team is incredibly responsive and always goes the extra mile."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MK</div>
+            <div><div class="author-name">Mark K.</div><div class="author-role">Small Business Owner, Amsterdam</div></div>
           </div>
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">"As an expat, Dutch taxes were a nightmare. Servicium handled my 30% ruling and M-form perfectly. Stress-free from start to finish."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">SL</div>
-              <div><div class="author-name">Sarah L.</div><div class="author-role">Expat Professional</div></div>
-            </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"As an expat, Dutch taxes were a nightmare. Servicium handled my 30% ruling and M-form perfectly. Stress-free from start to finish."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SL</div>
+            <div><div class="author-name">Sarah L.</div><div class="author-role">Expat Professional</div></div>
           </div>
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">"Finally found an accountant that explains everything clearly. The financial planning sessions have genuinely helped grow my business."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">RT</div>
-              <div><div class="author-name">Raj T.</div><div class="author-role">Freelance Consultant</div></div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">"Professional, reliable, and always on time. Servicium has been our financial backbone for over three years now."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">EP</div>
-              <div><div class="author-name">Elena P.</div><div class="author-role">E-commerce Founder</div></div>
-            </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Finally found an accountant that explains everything clearly. The financial planning sessions have genuinely helped grow my business."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RT</div>
+            <div><div class="author-name">Raj T.</div><div class="author-role">Freelance Consultant</div></div>
           </div>
         </div>
       </div>
-      <div class="testimonial-nav">
-        <button class="t-dot active"></button>
-        <button class="t-dot"></button>
-        <button class="t-dot"></button>
-        <button class="t-dot"></button>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-band">
+        <h2>Ready to Take Control of Your Finances?</h2>
+        <p>Book a free consultation with our team. No obligations, just clarity.</p>
+        <a href="https://servicium.as.me" target="_blank" class="btn-primary">Book Free Consultation →</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
-  <section style="padding: 4rem 2rem;">
-    <div class="cta-band reveal">
-      <h2 class="gradient-text">Ready to Take Control of Your Finances?</h2>
-      <p>Book a free consultation with our team. No obligations, just clarity.</p>
-      <a href="https://servicium.as.me" target="_blank" class="btn-primary">Book Free Consultation →</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="font-size:1.25rem;">
-          <div class="logo-icon">S</div> Servicium
-        </a>
+        <a href="index.html" class="nav-logo"><div class="logo-icon">S</div> Servicium</a>
         <p>Amsterdam's trusted financial partner. Building long-term relationships through personalised service and complete transparency.</p>
       </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html#bookkeeping">Bookkeeping</a></li>
-          <li><a href="services.html#tax">Tax Preparation</a></li>
-          <li><a href="services.html#expat">Expat Tax Support</a></li>
-          <li><a href="services.html#planning">Financial Planning</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="about.html#faq">FAQs</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://servicium.as.me" target="_blank">Book Consultation</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@servicium.nl">info@servicium.nl</a></li>
-          <li><a href="#">Amsterdam, Netherlands</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h4>Services</h4><ul>
+        <li><a href="services.html#bookkeeping">Bookkeeping</a></li>
+        <li><a href="services.html#tax">Tax Preparation</a></li>
+        <li><a href="services.html#expat">Expat Tax Support</a></li>
+        <li><a href="services.html#planning">Financial Planning</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html#faq">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://servicium.as.me" target="_blank">Book Consultation</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul>
+        <li><a href="mailto:info@servicium.nl">info@servicium.nl</a></li>
+        <li><a href="#">Amsterdam, Netherlands</a></li>
+      </ul></div>
     </div>
     <div class="footer-bottom">
       <span>© 2025 Servicium. All rights reserved.</span>
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </div>
+      <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
     </div>
   </footer>
 

@@ -8,47 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
-  <style>
-    .services-detail { display: flex; flex-direction: column; gap: 5rem; }
-    .service-detail-item {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
-    }
-    .service-detail-item:nth-child(even) .service-detail-text { order: 2; }
-    .service-detail-item:nth-child(even) .service-detail-visual { order: 1; }
-    .service-detail-visual {
-      background: var(--navy-card); border: 1px solid var(--border);
-      border-radius: 20px; padding: 3rem; text-align: center;
-      position: relative; overflow: hidden;
-    }
-    .service-detail-visual::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(circle at 50% 50%, rgba(201,168,76,0.06), transparent 70%);
-    }
-    .service-big-icon { font-size: 5rem; display: block; margin-bottom: 1rem; }
-    .service-price {
-      display: inline-block; margin-top: 1.5rem;
-      padding: 0.5rem 1.25rem; border-radius: 100px;
-      background: rgba(201,168,76,0.1); border: 1px solid var(--border);
-      color: var(--gold); font-weight: 700; font-size: 0.9rem;
-    }
-    .service-detail-text h2 { margin-bottom: 1rem; font-size: 2rem; }
-    .service-detail-text p { margin-bottom: 1.5rem; }
-    .feature-checklist { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
-    .feature-checklist li { display: flex; align-items: center; gap: 10px; color: var(--text); font-size: 0.95rem; }
-    .check { width: 22px; height: 22px; border-radius: 50%; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: var(--gold); flex-shrink: 0; }
-    @media (max-width: 768px) {
-      .service-detail-item { grid-template-columns: 1fr; }
-      .service-detail-item:nth-child(even) .service-detail-text { order: 1; }
-      .service-detail-item:nth-child(even) .service-detail-visual { order: 2; }
-    }
-  </style>
 </head>
-<body class="page-transition">
+<body>
 
   <nav class="navbar">
-    <a href="index.html" class="nav-logo">
-      <div class="logo-icon">S</div> Servicium
-    </a>
+    <a href="index.html" class="nav-logo"><div class="logo-icon">S</div> Servicium</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="services.html" class="active">Services</a>
@@ -69,8 +33,8 @@
   <section class="page-hero">
     <div class="page-hero-content">
       <div class="section-label">Our Services</div>
-      <h1>Everything You Need,<br/><span class="gradient-text">Under One Roof</span></h1>
-      <p style="margin-top:1rem; font-size:1.1rem;">Comprehensive financial services tailored to individuals, freelancers, expats, and businesses in Amsterdam.</p>
+      <h1>Everything You Need,<br/><span>Under One Roof</span></h1>
+      <p>Comprehensive financial services for individuals, freelancers, expats, and businesses in Amsterdam.</p>
     </div>
   </section>
 
@@ -78,17 +42,16 @@
     <div class="container">
       <div class="services-detail">
 
-        <!-- Bookkeeping -->
-        <div class="service-detail-item reveal" id="bookkeeping">
+        <div class="service-detail-item" id="bookkeeping">
           <div class="service-detail-visual">
             <span class="service-big-icon">📒</span>
-            <h3 style="color:var(--text);">Bookkeeping</h3>
+            <h3 style="color:var(--navy);">Bookkeeping</h3>
             <p style="font-size:0.9rem;">Clear records, always up to date</p>
             <span class="service-price">Monthly & Annual Plans</span>
           </div>
           <div class="service-detail-text">
             <div class="section-label">01 — Bookkeeping</div>
-            <h2>Your Financial Records,<br/><span class="gradient-text">Always Perfect</span></h2>
+            <h2>Your Financial Records, Always Perfect</h2>
             <p>We manage all your day-to-day financial records with precision, giving you a clear picture of your business health at any moment.</p>
             <ul class="feature-checklist">
               <li><span class="check">✓</span> Invoice and bill management</li>
@@ -101,17 +64,18 @@
           </div>
         </div>
 
-        <!-- Tax Preparation -->
-        <div class="service-detail-item reveal" id="tax">
+        <div style="height:1px;background:var(--grey-border);"></div>
+
+        <div class="service-detail-item" id="tax">
           <div class="service-detail-visual">
             <span class="service-big-icon">🧾</span>
-            <h3 style="color:var(--text);">Tax Preparation</h3>
+            <h3 style="color:var(--navy);">Tax Preparation</h3>
             <p style="font-size:0.9rem;">Maximise returns, minimise stress</p>
             <span class="service-price">Business & Personal</span>
           </div>
           <div class="service-detail-text">
             <div class="section-label">02 — Tax Preparation</div>
-            <h2>Tax Returns Done<br/><span class="gradient-text">Right, Every Time</span></h2>
+            <h2>Tax Returns Done Right, Every Time</h2>
             <p>We handle business and personal tax returns with deep expertise in Dutch tax law, ensuring you never pay more than you owe.</p>
             <ul class="feature-checklist">
               <li><span class="check">✓</span> Business tax returns (BV, eenmanszaak)</li>
@@ -124,17 +88,18 @@
           </div>
         </div>
 
-        <!-- Expat Tax -->
-        <div class="service-detail-item reveal" id="expat">
+        <div style="height:1px;background:var(--grey-border);"></div>
+
+        <div class="service-detail-item" id="expat">
           <div class="service-detail-visual">
             <span class="service-big-icon">🌍</span>
-            <h3 style="color:var(--text);">Expat Tax Support</h3>
+            <h3 style="color:var(--navy);">Expat Tax Support</h3>
             <p style="font-size:0.9rem;">Navigating Dutch taxes as an expat</p>
             <span class="service-price">Expat Specialists</span>
           </div>
           <div class="service-detail-text">
             <div class="section-label">03 — Expat Tax Support</div>
-            <h2>Dutch Taxes Made<br/><span class="gradient-text">Simple for Expats</span></h2>
+            <h2>Dutch Taxes Made Simple for Expats</h2>
             <p>Moving to or leaving the Netherlands creates complex tax situations. Our expat specialists handle it all so you can focus on settling in.</p>
             <ul class="feature-checklist">
               <li><span class="check">✓</span> 30% ruling applications & management</li>
@@ -147,17 +112,18 @@
           </div>
         </div>
 
-        <!-- Financial Planning -->
-        <div class="service-detail-item reveal" id="planning">
+        <div style="height:1px;background:var(--grey-border);"></div>
+
+        <div class="service-detail-item" id="planning">
           <div class="service-detail-visual">
             <span class="service-big-icon">📈</span>
-            <h3 style="color:var(--text);">Financial Planning</h3>
+            <h3 style="color:var(--navy);">Financial Planning</h3>
             <p style="font-size:0.9rem;">Strategy aligned with your goals</p>
             <span class="service-price">Strategic & Growth</span>
           </div>
           <div class="service-detail-text">
             <div class="section-label">04 — Financial Planning</div>
-            <h2>Plan Smarter,<br/><span class="gradient-text">Grow Faster</span></h2>
+            <h2>Plan Smarter, Grow Faster</h2>
             <p>Strategic financial planning and modeling designed to align your numbers with your ambitions — whether you're scaling a startup or managing personal wealth.</p>
             <ul class="feature-checklist">
               <li><span class="check">✓</span> Business financial modeling</li>
@@ -174,19 +140,20 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section style="padding: 2rem 2rem 6rem;">
-    <div class="cta-band reveal">
-      <h2 class="gradient-text">Not Sure Which Service You Need?</h2>
-      <p>Book a free 30-minute discovery call and we'll point you in the right direction.</p>
-      <a href="https://servicium.as.me" target="_blank" class="btn-primary">Book Free Consultation →</a>
+  <section style="padding: 0 2rem 5rem;">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Not Sure Which Service You Need?</h2>
+        <p>Book a free 30-minute discovery call and we'll point you in the right direction.</p>
+        <a href="https://servicium.as.me" target="_blank" class="btn-primary">Book Free Consultation →</a>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="font-size:1.25rem;"><div class="logo-icon">S</div> Servicium</a>
+        <a href="index.html" class="nav-logo"><div class="logo-icon">S</div> Servicium</a>
         <p>Amsterdam's trusted financial partner. Building long-term relationships through personalised service and complete transparency.</p>
       </div>
       <div class="footer-col"><h4>Services</h4><ul>
