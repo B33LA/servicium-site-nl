@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard – Servicium CMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/admin/css/admin.css" />
+</head>
+<body>
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <a href="/" class="sidebar-logo">
+      <div class="logo-icon">S</div>
+      <span>Servicium</span>
+    </a>
+    <nav class="sidebar-nav">
+      <span class="nav-section-label">General</span>
+      <div class="nav-item active" data-panel="dashboard">
+        <span class="nav-icon">📊</span> Dashboard
+      </div>
+      <div class="nav-item" data-panel="site">
+        <span class="nav-icon">🌐</span> Site Settings
+      </div>
+
+      <span class="nav-section-label">Pages</span>
+
+      <div class="nav-item" data-panel="home-meta">
+        <span class="nav-icon">🏠</span> Home Page
+      </div>
+      <div class="nav-sub">
+        <div class="nav-item" data-panel="home-meta">Meta Tags</div>
+        <div class="nav-item" data-panel="home-hero">Hero</div>
+        <div class="nav-item" data-panel="home-whyus">Why Us</div>
+        <div class="nav-item" data-panel="home-testimonials">Testimonials</div>
+        <div class="nav-item" data-panel="home-cta">CTA</div>
+      </div>
+
+      <div class="nav-item" data-panel="services-meta">
+        <span class="nav-icon">⚙️</span> Services Page
+      </div>
+      <div class="nav-sub">
+        <div class="nav-item" data-panel="services-meta">Meta Tags</div>
+        <div class="nav-item" data-panel="services-hero">Hero</div>
+        <div class="nav-item" data-panel="services-bookkeeping">Bookkeeping</div>
+        <div class="nav-item" data-panel="services-tax">Tax Preparation</div>
+        <div class="nav-item" data-panel="services-expat">Expat Tax</div>
+        <div class="nav-item" data-panel="services-planning">Financial Planning</div>
+      </div>
+
+      <div class="nav-item" data-panel="about-meta">
+        <span class="nav-icon">👥</span> About Page
+      </div>
+      <div class="nav-sub">
+        <div class="nav-item" data-panel="about-meta">Meta Tags</div>
+        <div class="nav-item" data-panel="about-hero">Hero</div>
+        <div class="nav-item" data-panel="about-story">Story</div>
+        <div class="nav-item" data-panel="about-team">Team</div>
+        <div class="nav-item" data-panel="about-faq">FAQ</div>
+        <div class="nav-item" data-panel="about-cta">CTA</div>
+      </div>
+
+      <div class="nav-item" data-panel="contact-meta">
+        <span class="nav-icon">📧</span> Contact Page
+      </div>
+      <div class="nav-sub">
+        <div class="nav-item" data-panel="contact-meta">Meta Tags</div>
+        <div class="nav-item" data-panel="contact-hero">Hero</div>
+        <div class="nav-item" data-panel="contact-hours">Office Hours</div>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-title">Servicium CMS</div>
+      <div class="topbar-right">
+        <span class="topbar-user">admin</span>
+        <button class="btn btn-logout" id="logout-btn">Log out</button>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="content" id="content-area">
+
+      <!-- DASHBOARD -->
+      <div class="panel active" id="panel-dashboard">
+        <div class="page-header">
+          <h2>Dashboard</h2>
+          <p>Welcome back. Manage your site content from the sidebar.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Pages</div></div>
+          <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Services</div></div>
+          <div class="stat-card"><div class="stat-num" id="stat-testimonials">3</div><div class="stat-label">Testimonials</div></div>
+          <div class="stat-card"><div class="stat-num" id="stat-faq">5</div><div class="stat-label">FAQ Items</div></div>
+          <div class="stat-card"><div class="stat-num" id="stat-team">4</div><div class="stat-label">Team Members</div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Quick Links</span></div>
+          <div class="quick-links">
+            <div class="quick-link" data-panel="site"><span class="ql-icon">🌐</span><span class="ql-text">Site Settings</span></div>
+            <div class="quick-link" data-panel="home-hero"><span class="ql-icon">🏠</span><span class="ql-text">Home Hero</span></div>
+            <div class="quick-link" data-panel="home-testimonials"><span class="ql-icon">💬</span><span class="ql-text">Testimonials</span></div>
+            <div class="quick-link" data-panel="services-bookkeeping"><span class="ql-icon">📒</span><span class="ql-text">Bookkeeping</span></div>
+            <div class="quick-link" data-panel="about-team"><span class="ql-icon">👥</span><span class="ql-text">Team</span></div>
+            <div class="quick-link" data-panel="about-faq"><span class="ql-icon">❓</span><span class="ql-text">FAQ</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SITE SETTINGS -->
+      <div class="panel" id="panel-site">
+        <div class="page-header"><h2>Site Settings</h2><p>Global settings applied across the entire website.</p></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">General</span></div>
+          <div class="form-group">
+            <label>Site Name</label>
+            <input type="text" id="site-name" />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="site-email" />
+          </div>
+          <div class="form-group">
+            <label>Location</label>
+            <input type="text" id="site-location" />
+          </div>
+          <div class="form-group">
+            <label>Booking URL</label>
+            <input type="url" id="site-booking-url" />
+          </div>
+          <button class="btn btn-primary" onclick="saveSiteSettings()">Save Settings</button>
+        </div>
+      </div>
+
+      <!-- HOME META -->
+      <div class="panel" id="panel-home-meta">
+        <div class="page-header"><h2>Home – Meta Tags</h2><p>SEO and social sharing tags for the home page.</p></div>
+        <div class="card" id="meta-card-home"></div>
+      </div>
+
+      <!-- HOME HERO -->
+      <div class="panel" id="panel-home-hero">
+        <div class="page-header"><h2>Home – Hero Section</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Hero Content</span></div>
+          <div class="form-group"><label>Badge Text</label><input type="text" id="home-hero-badge" /></div>
+          <div class="form-group"><label>Heading</label><input type="text" id="home-hero-heading" /></div>
+          <div class="form-group"><label>Subheading</label><textarea id="home-hero-subheading"></textarea></div>
+          <div class="form-row">
+            <div class="form-group"><label>Stat 1 Value</label><input type="text" id="home-hero-stat1Value" /></div>
+            <div class="form-group"><label>Stat 1 Label</label><input type="text" id="home-hero-stat1Label" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Stat 2 Value</label><input type="text" id="home-hero-stat2Value" /></div>
+            <div class="form-group"><label>Stat 2 Label</label><input type="text" id="home-hero-stat2Label" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Stat 3 Value</label><input type="text" id="home-hero-stat3Value" /></div>
+            <div class="form-group"><label>Stat 3 Label</label><input type="text" id="home-hero-stat3Label" /></div>
+          </div>
+          <button class="btn btn-primary" onclick="saveSection('home','hero',getHomeHero)">Save Hero</button>
+        </div>
+      </div>
+
+      <!-- HOME WHY US -->
+      <div class="panel" id="panel-home-whyus">
+        <div class="page-header"><h2>Home – Why Us</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Section Header</span></div>
+          <div class="form-group"><label>Heading</label><input type="text" id="whyus-heading" /></div>
+          <div class="form-group"><label>Subtitle</label><textarea id="whyus-subtitle" rows="2"></textarea></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Items</span></div>
+          <div id="whyus-items-list"></div>
+          <button class="btn btn-add" onclick="addWhyUsItem()">+ Add Item</button>
+          <div style="margin-top:1rem"><button class="btn btn-primary" onclick="saveWhyUs()">Save Why Us</button></div>
+        </div>
+      </div>
+
+      <!-- HOME TESTIMONIALS -->
+      <div class="panel" id="panel-home-testimonials">
+        <div class="page-header"><h2>Home – Testimonials</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Testimonials</span></div>
+          <div id="testimonials-list"></div>
+          <button class="btn btn-add" onclick="addTestimonial()">+ Add Testimonial</button>
+          <div style="margin-top:1rem"><button class="btn btn-primary" onclick="saveTestimonials()">Save Testimonials</button></div>
+        </div>
+      </div>
+
+      <!-- HOME CTA -->
+      <div class="panel" id="panel-home-cta">
+        <div class="page-header"><h2>Home – CTA Section</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Call to Action</span></div>
+          <div class="form-group"><label>Heading</label><input type="text" id="home-cta-heading" /></div>
+          <div class="form-group"><label>Text</label><textarea id="home-cta-text" rows="2"></textarea></div>
+          <div class="form-group"><label>Button Text</label><input type="text" id="home-cta-buttonText" /></div>
+          <button class="btn btn-primary" onclick="saveSection('home','cta',getHomeCta)">Save CTA</button>
+        </div>
+      </div>
+
+      <!-- SERVICES META -->
+      <div class="panel" id="panel-services-meta">
+        <div class="page-header"><h2>Services – Meta Tags</h2></div>
+        <div class="card" id="meta-card-services"></div>
+      </div>
+
+      <!-- SERVICES HERO -->
+      <div class="panel" id="panel-services-hero">
+        <div class="page-header"><h2>Services – Hero Section</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Hero Content</span></div>
+          <div class="form-group"><label>Badge</label><input type="text" id="services-hero-badge" /></div>
+          <div class="form-group"><label>Heading</label><input type="text" id="services-hero-heading" /></div>
+          <div class="form-group"><label>Subheading</label><textarea id="services-hero-subheading" rows="2"></textarea></div>
+          <button class="btn btn-primary" onclick="saveSection('services','hero',getServicesHero)">Save Hero</button>
+        </div>
+      </div>
+
+      <!-- SERVICE: BOOKKEEPING -->
+      <div class="panel" id="panel-services-bookkeeping">
+        <div class="page-header"><h2>Service – Bookkeeping</h2></div>
+        <div id="service-editor-bookkeeping"></div>
+      </div>
+
+      <!-- SERVICE: TAX -->
+      <div class="panel" id="panel-services-tax">
+        <div class="page-header"><h2>Service – Tax Preparation</h2></div>
+        <div id="service-editor-tax"></div>
+      </div>
+
+      <!-- SERVICE: EXPAT -->
+      <div class="panel" id="panel-services-expat">
+        <div class="page-header"><h2>Service – Expat Tax Support</h2></div>
+        <div id="service-editor-expat"></div>
+      </div>
+
+      <!-- SERVICE: PLANNING -->
+      <div class="panel" id="panel-services-planning">
+        <div class="page-header"><h2>Service – Financial Planning</h2></div>
+        <div id="service-editor-planning"></div>
+      </div>
+
+      <!-- ABOUT META -->
+      <div class="panel" id="panel-about-meta">
+        <div class="page-header"><h2>About – Meta Tags</h2></div>
+        <div class="card" id="meta-card-about"></div>
+      </div>
+
+      <!-- ABOUT HERO -->
+      <div class="panel" id="panel-about-hero">
+        <div class="page-header"><h2>About – Hero Section</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Hero Content</span></div>
+          <div class="form-group"><label>Badge</label><input type="text" id="about-hero-badge" /></div>
+          <div class="form-group"><label>Heading</label><input type="text" id="about-hero-heading" /></div>
+          <div class="form-group"><label>Subheading</label><textarea id="about-hero-subheading" rows="2"></textarea></div>
+          <button class="btn btn-primary" onclick="saveSection('about','hero',getAboutHero)">Save Hero</button>
+        </div>
+      </div>
+
+      <!-- ABOUT STORY -->
+      <div class="panel" id="panel-about-story">
+        <div class="page-header"><h2>About – Story</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Our Story</span></div>
+          <div class="form-group"><label>Heading</label><input type="text" id="about-story-heading" /></div>
+          <div class="form-group"><label>Paragraph 1</label><textarea id="about-story-para1"></textarea></div>
+          <div class="form-group"><label>Paragraph 2</label><textarea id="about-story-para2"></textarea></div>
+          <button class="btn btn-primary" onclick="saveSection('about','story',getAboutStory)">Save Story</button>
+        </div>
+      </div>
+
+      <!-- ABOUT TEAM -->
+      <div class="panel" id="panel-about-team">
+        <div class="page-header"><h2>About – Team</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Team Members</span></div>
+          <div id="team-list"></div>
+          <button class="btn btn-add" onclick="addTeamMember()">+ Add Team Member</button>
+          <div style="margin-top:1rem"><button class="btn btn-primary" onclick="saveTeam()">Save Team</button></div>
+        </div>
+      </div>
+
+      <!-- ABOUT FAQ -->
+      <div class="panel" id="panel-about-faq">
+        <div class="page-header"><h2>About – FAQ</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Frequently Asked Questions</span></div>
+          <div id="faq-list"></div>
+          <button class="btn btn-add" onclick="addFaqItem()">+ Add FAQ</button>
+          <div style="margin-top:1rem"><button class="btn btn-primary" onclick="saveFaq()">Save FAQ</button></div>
+        </div>
+      </div>
+
+      <!-- ABOUT CTA -->
+      <div class="panel" id="panel-about-cta">
+        <div class="page-header"><h2>About – CTA Section</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Call to Action</span></div>
+          <div class="form-group"><label>Heading</label><input type="text" id="about-cta-heading" /></div>
+          <div class="form-group"><label>Text</label><textarea id="about-cta-text" rows="2"></textarea></div>
+          <div class="form-group"><label>Button Text</label><input type="text" id="about-cta-buttonText" /></div>
+          <button class="btn btn-primary" onclick="saveSection('about','cta',getAboutCta)">Save CTA</button>
+        </div>
+      </div>
+
+      <!-- CONTACT META -->
+      <div class="panel" id="panel-contact-meta">
+        <div class="page-header"><h2>Contact – Meta Tags</h2></div>
+        <div class="card" id="meta-card-contact"></div>
+      </div>
+
+      <!-- CONTACT HERO -->
+      <div class="panel" id="panel-contact-hero">
+        <div class="page-header"><h2>Contact – Hero Section</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Hero Content</span></div>
+          <div class="form-group"><label>Badge</label><input type="text" id="contact-hero-badge" /></div>
+          <div class="form-group"><label>Heading</label><input type="text" id="contact-hero-heading" /></div>
+          <div class="form-group"><label>Subheading</label><textarea id="contact-hero-subheading" rows="2"></textarea></div>
+          <button class="btn btn-primary" onclick="saveSection('contact','hero',getContactHero)">Save Hero</button>
+        </div>
+      </div>
+
+      <!-- CONTACT HOURS -->
+      <div class="panel" id="panel-contact-hours">
+        <div class="page-header"><h2>Contact – Office Hours</h2></div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Office Hours</span></div>
+          <div class="form-group"><label>Monday – Friday</label><input type="text" id="contact-hours-weekdays" /></div>
+          <div class="form-group"><label>Saturday</label><input type="text" id="contact-hours-saturday" /></div>
+          <div class="form-group"><label>Sunday</label><input type="text" id="contact-hours-sunday" /></div>
+          <button class="btn btn-primary" onclick="saveSection('contact','hours',getContactHours)">Save Hours</button>
+        </div>
+      </div>
+
+    </div><!-- /content -->
+  </div><!-- /main -->
+</div><!-- /app -->
+
+<div class="toast-container" id="toast-container"></div>
+
+<script src="/admin/js/admin.js"></script>
+</body>
+</html>

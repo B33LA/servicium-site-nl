@@ -1,0 +1,257 @@
+{
+  "site": {
+    "name": "Servicium",
+    "email": "info@servicium.nl",
+    "location": "Amsterdam, the Netherlands",
+    "bookingUrl": "https://servicium.as.me",
+    "adminPassword": "$2a$10$0FFd9SVsdNfVJL6FbgP/vugeKyHd/UF6Y65.Ku.j1Wj880pYGZXIC"
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Servicium – Financial Services Amsterdam",
+        "description": "Servicium provides expert bookkeeping, tax preparation, expat tax support, and financial planning in Amsterdam.",
+        "ogTitle": "Servicium – Financial Services Amsterdam",
+        "ogDescription": "Expert bookkeeping, tax preparation, expat tax support, and financial planning — tailored to your goals with complete transparency.",
+        "ogUrl": "https://servicium.nl"
+      },
+      "hero": {
+        "badge": "Amsterdam, Netherlands",
+        "heading": "Financial Clarity, Built for You",
+        "subheading": "Expert bookkeeping, tax preparation, expat tax support, and financial planning — tailored to your goals with complete transparency.",
+        "stat1Label": "Happy Clients",
+        "stat1Value": "200+",
+        "stat2Label": "Years Experience",
+        "stat2Value": "10+",
+        "stat3Label": "Client Satisfaction",
+        "stat3Value": "98%"
+      },
+      "whyUs": {
+        "heading": "What Sets Us Apart",
+        "subtitle": "We build lasting relationships through personalised service and complete transparency.",
+        "items": [
+          {
+            "tag": "Personalised",
+            "title": "Client-First Approach",
+            "text": "No cookie-cutter solutions. Every client gets a dedicated approach tailored to their situation."
+          },
+          {
+            "tag": "Transparent",
+            "title": "No Hidden Fees",
+            "text": "We explain complex financial concepts in plain language — no jargon, no surprises."
+          },
+          {
+            "tag": "Long-term",
+            "title": "Lasting Relationships",
+            "text": "We focus on building lasting partnerships, not one-off transactions. Your success is our success."
+          },
+          {
+            "tag": "Specialised",
+            "title": "Expat Experts",
+            "text": "Deep expertise in Dutch tax law and expat-specific matters like the 30% ruling and M-form."
+          }
+        ]
+      },
+      "testimonials": [
+        {
+          "initials": "MK",
+          "name": "Mark K.",
+          "role": "Small Business Owner, Amsterdam",
+          "text": "Servicium completely transformed how I handle my finances. Their team is incredibly responsive and always goes the extra mile."
+        },
+        {
+          "initials": "SL",
+          "name": "Sarah L.",
+          "role": "Expat Professional",
+          "text": "As an expat, Dutch taxes were a nightmare. Servicium handled my 30% ruling and M-form perfectly. Stress-free from start to finish."
+        },
+        {
+          "initials": "RT",
+          "name": "Raj T.",
+          "role": "Freelance Consultant",
+          "text": "Finally found an accountant that explains everything clearly. The financial planning sessions have genuinely helped grow my business."
+        }
+      ],
+      "cta": {
+        "heading": "Ready to Take Control of Your Finances?",
+        "text": "Book a free consultation with our team. No obligations, just clarity.",
+        "buttonText": "Book Free Consultation →"
+      }
+    },
+    "services": {
+      "meta": {
+        "title": "Services – Servicium",
+        "description": "Comprehensive financial services for individuals, freelancers, expats, and businesses in Amsterdam. Bookkeeping, tax preparation, expat tax support, and financial planning.",
+        "ogTitle": "Services – Servicium",
+        "ogDescription": "Comprehensive financial services for individuals, freelancers, expats, and businesses in Amsterdam.",
+        "ogUrl": "https://servicium.nl/services"
+      },
+      "hero": {
+        "badge": "Our Services",
+        "heading": "Everything You Need, Under One Roof",
+        "subheading": "Comprehensive financial services for individuals, freelancers, expats, and businesses in Amsterdam."
+      },
+      "items": [
+        {
+          "id": "bookkeeping",
+          "emoji": "📒",
+          "number": "01",
+          "tag": "Bookkeeping",
+          "heading": "Your Financial Records, Always Perfect",
+          "text": "We manage all your day-to-day financial records with precision, giving you a clear picture of your business health at any moment.",
+          "badge": "Monthly & Annual Plans",
+          "subtext": "Clear records, always up to date",
+          "features": [
+            "Invoice and bill management",
+            "Bank reconciliation & categorization",
+            "Financial statement preparation",
+            "Real-time dashboard access",
+            "Monthly reporting & insights"
+          ]
+        },
+        {
+          "id": "tax",
+          "emoji": "🧾",
+          "number": "02",
+          "tag": "Tax Preparation",
+          "heading": "Tax Returns Done Right, Every Time",
+          "text": "We handle business and personal tax returns with deep expertise in Dutch tax law, ensuring you never pay more than you owe.",
+          "badge": "Business & Personal",
+          "subtext": "Maximise returns, minimise stress",
+          "features": [
+            "Business tax returns (BV, eenmanszaak)",
+            "Personal income tax returns",
+            "VAT returns & administration",
+            "Tax optimisation strategies",
+            "Belastingdienst correspondence"
+          ]
+        },
+        {
+          "id": "expat",
+          "emoji": "🌍",
+          "number": "03",
+          "tag": "Expat Tax Support",
+          "heading": "Dutch Taxes Made Simple for Expats",
+          "text": "Moving to or leaving the Netherlands creates complex tax situations. Our expat specialists handle it all so you can focus on settling in.",
+          "badge": "Expat Specialists",
+          "subtext": "Navigating Dutch taxes as an expat",
+          "features": [
+            "30% ruling applications & management",
+            "M-form (migration year) filing",
+            "Dutch income tax returns",
+            "DigiD & BSN number assistance",
+            "Cross-border tax advice"
+          ]
+        },
+        {
+          "id": "planning",
+          "emoji": "📈",
+          "number": "04",
+          "tag": "Financial Planning",
+          "heading": "Plan Smarter, Grow Faster",
+          "text": "Strategic financial planning and modeling designed to align your numbers with your ambitions — whether you're scaling a startup or managing personal wealth.",
+          "badge": "Strategic & Growth",
+          "subtext": "Strategy aligned with your goals",
+          "features": [
+            "Business financial modeling",
+            "Cash flow forecasting",
+            "Budget planning & tracking",
+            "Investment scenario analysis",
+            "Growth strategy support"
+          ]
+        }
+      ]
+    },
+    "about": {
+      "meta": {
+        "title": "About – Servicium",
+        "description": "Learn about Servicium — a dedicated team of financial specialists based in Amsterdam, committed to your long-term success.",
+        "ogTitle": "About Servicium – Financial Specialists Amsterdam",
+        "ogDescription": "A dedicated team of financial specialists based in Amsterdam, committed to your long-term success.",
+        "ogUrl": "https://servicium.nl/about"
+      },
+      "hero": {
+        "badge": "About Servicium",
+        "heading": "We're More Than Your Accountants",
+        "subheading": "A dedicated team of financial specialists based in Amsterdam, committed to your long-term success."
+      },
+      "story": {
+        "heading": "Built on Trust, Driven by Clarity",
+        "para1": "Servicium was founded with one mission: to make financial services genuinely personal. We believed — and still believe — that everyone deserves a financial partner who explains things clearly, listens carefully, and delivers results.",
+        "para2": "Based in Amsterdam, we work with individuals, freelancers, expats, and growing businesses. Whether you need monthly bookkeeping or help navigating the 30% ruling, we bring the same level of dedication and expertise to every engagement."
+      },
+      "team": [
+        {
+          "initials": "JV",
+          "name": "Jan van den Berg",
+          "role": "Founder & Lead Accountant",
+          "bio": "10+ years of Dutch tax law expertise. Specialises in business tax and financial planning."
+        },
+        {
+          "initials": "AM",
+          "name": "Anna Müller",
+          "role": "Expat Tax Specialist",
+          "bio": "Former expat herself — Anna understands the complexities of navigating Dutch tax as a foreigner."
+        },
+        {
+          "initials": "DS",
+          "name": "David Smit",
+          "role": "Bookkeeping & Reporting",
+          "bio": "Meticulous and detail-oriented, David ensures every cent is accounted for accurately."
+        },
+        {
+          "initials": "LK",
+          "name": "Laura Klaassen",
+          "role": "Financial Planning Advisor",
+          "bio": "Strategic thinker who helps clients model their financial future with confidence."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do you work with both businesses and individuals?",
+          "answer": "Yes. We work with sole traders (eenmanszaak), BVs, freelancers, and private individuals — including expats at all stages of their Dutch financial journey."
+        },
+        {
+          "question": "What is the 30% ruling and do I qualify?",
+          "answer": "The 30% ruling is a Dutch tax advantage for highly skilled migrants, allowing 30% of your salary to be paid tax-free. Eligibility depends on salary level, role, and residency history. We assess your situation and handle the application end-to-end."
+        },
+        {
+          "question": "How quickly do you respond to queries?",
+          "answer": "We aim to respond to all client emails within one business day. For urgent matters, we always make time to help — our clients frequently tell us our responsiveness is one of our best qualities."
+        },
+        {
+          "question": "What software do you use?",
+          "answer": "We use modern cloud-based accounting tools including Exact Online and Moneybird, depending on your needs. We ensure seamless integration with your existing systems."
+        },
+        {
+          "question": "Is the first consultation really free?",
+          "answer": "Absolutely — no strings attached. The first 30-minute call is completely free. We use it to understand your situation and see if we're the right fit. Book directly via our calendar link."
+        }
+      ],
+      "cta": {
+        "heading": "Let's Work Together",
+        "text": "Get in touch today and discover how Servicium can simplify your financial life.",
+        "buttonText": "Contact Us →"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact – Servicium",
+        "description": "Get in touch with Servicium. Book a free consultation or send us a message — we reply within one business day.",
+        "ogTitle": "Contact Servicium – Book a Free Consultation",
+        "ogDescription": "Get in touch with Servicium. Book a free consultation or send us a message — we reply within one business day.",
+        "ogUrl": "https://servicium.nl/contact"
+      },
+      "hero": {
+        "badge": "Get In Touch",
+        "heading": "Let's Start a Conversation",
+        "subheading": "We're here to help. Reach out with any questions, or book a free consultation directly."
+      },
+      "hours": {
+        "weekdays": "9:00 – 17:30",
+        "saturday": "By appointment",
+        "sunday": "Closed"
+      }
+    }
+  }
+}
